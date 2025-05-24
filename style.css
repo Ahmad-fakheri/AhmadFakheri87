@@ -1,3 +1,4 @@
+/* فونت‌ها */
 @font-face {
   font-family: 'ModamFaNumWeb-Light';
   src: url('ModamFaNumWeb-Light.woff') format('woff');
@@ -13,141 +14,55 @@
   src: url('ModamFaNumWeb-Black.woff') format('woff');
 }
 
+/* تنظیمات کلی */
 body {
   font-family: 'ModamFaNumWeb-bold';
   margin: 0;
   padding: 20px;
   background-color: rgb(0, 7, 17);
   text-align: center;
+  direction: rtl;
 }
 
-.header{
+.header {
   display: flex;
-  align-items: center;          
+  align-items: center;
   justify-content: center;
-  gap: 15px; /* فاصله بین تصویر و متن */
+  gap: 15px;
+  margin: 10px;
 }
-#prof{
+
+#prof {
   width: 50px;
 }
 
 h1 {
   color: #ffffff;
+  font-size: 180%;
 }
 
-.video-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 0 20px;
-}
-
-.video-card {
-  background-color: rgb(0, 29, 60);
-  border-radius: 8px;
-  box-shadow: 5 22px 25px rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  text-align: right;
-}
-
-video {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-h3 {
-  margin: 10px 0 5px;
-  color: #ffffff;
-}
-
-p {
-    font-family: 'ModamFaNumWeb-light';
-  color: #90a9c5;
+#in {
+  font-family: 'ModamFaNumWeb-Light';
+  color: #a0a4a8;
   font-size: 14px;
 }
 
-.social-buttons {
-  display: flex;
-  gap: 14px;
-  width: 70%;
-  margin: 0 auto;
-  padding: 30px;
-  background: #020219;
-  border-radius: 16px;
-  justify-content: center;
+p{
+    font-family: 'ModamFaNumWeb-Light';
+  color: #a0a4a8;
+  font-size: 14px;
 }
-
-.social-buttons a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 18px;
-  font-size: 15px;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-  border: 2px solid transparent;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 0 10px transparent;
-}
-
-.social-buttons a i {
-  font-size: 16px;
-}
-
-/* INSTAGRAM */
-.social-buttons a.instagram {
-  background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
-  color: white;
-}
-.social-buttons a.instagram:hover {
-  box-shadow: 0 0 15px #d62976aa;
-  transform: scale(1.05);
-}
-
-/* YOUTUBE */
-.social-buttons a.youtube {
-  background: #ff0000;
-}
-.social-buttons a.youtube:hover {
-  box-shadow: 0 0 15px #ff0000aa;
-  transform: scale(1.05);
-}
-
-/* X (Twitter) */
-.social-buttons a.x {
-  background: #000;
-  color: white;
-}
-.social-buttons a.x:hover {
-  box-shadow: 0 0 15px #ffffff88;
-  transform: scale(1.05);
-}
-
-/* TELEGRAM */
-.social-buttons a.telegram {
-  background: #0088cc;
-}
-.social-buttons a.telegram:hover {
-  box-shadow: 0 0 15px #0088ccaa;
-  transform: scale(1.05);
-}
-
-
+/* شبکه ویدیوها */
 .works-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   padding: 20px;
-
-  gap: 14px;
-  padding: 20px;
   background: #020219;
   border-radius: 16px;
   justify-content: center;
-
+  max-width: 1200px;
+  margin: 20px auto;
 }
 
 .card {
@@ -155,8 +70,9 @@ p {
   border-radius: 14px;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  border: 1px solid #1a1c3b;  
+  border: 1px solid #1a1c3b;
   position: relative;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -170,6 +86,7 @@ p {
   border: none;
   border-bottom: 1px solid #1e1f3f;
   transition: 0.3s;
+  pointer-events: none;
 }
 
 .card-content {
@@ -188,4 +105,248 @@ p {
 .card-content p {
   font-size: 13px;
   color: #aab0cc;
+}
+
+/* دکمه‌های شبکه‌های اجتماعی */
+.social-buttons {
+  display: flex;
+  gap: 14px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #020219;
+  border-radius: 16px;
+  width: 60%;
+  justify-content: center;
+}
+
+.social-buttons a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  
+  border: 2px solid transparent;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px transparent;
+}
+
+.social-buttons a i {
+  font-size: 16px;
+}
+
+/* استایل‌های خاص برای هر شبکه اجتماعی */
+.social-buttons a.instagram {
+  background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
+  color: white;
+}
+
+.social-buttons a.instagram:hover {
+  box-shadow: 0 0 15px #d62976aa;
+  transform: scale(1.05);
+
+
+}
+
+.social-buttons a.youtube {
+  background: #ff0000;
+}
+
+.social-buttons a.youtube:hover {
+  box-shadow: 0 0 15px #ff0000aa;
+  transform: scale(1.05);
+}
+
+.social-buttons a.x {
+  background: #000;
+  color: white;
+}
+
+.social-buttons a.x:hover {
+  box-shadow: 0 0 15px #ffffff88;
+  transform: scale(1.05);
+}
+
+.social-buttons a.telegram {
+  background: #0088cc;
+}
+
+.social-buttons a.telegram:hover {
+  box-shadow: 0 0 15px #0088ccaa;
+  transform: scale(1.05);
+}
+
+/* مودال ویدیو */
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+}
+
+.video-modal.active {
+  display: flex;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0b0d21;
+  border-radius: 14px;
+  padding: 20px;
+  max-width: 90%;
+  width: 800px;
+  box-shadow: 0 0 30px #0039a388, 0 0 10px #00135f55;
+  animation: zoomIn 0.4s ease-in-out;
+  transition: transform 0.1s ease-out; /* Smooth transform for mouse movement */
+}
+
+.close-btn {
+  position: absolute;
+  top: -7px;
+  left: -4px;
+  color: #ffffff;
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 1001;
+  width: 40px;
+  height: auto;
+  border-radius: 60px;
+  background-color: #0062ff;
+  text-align: center;
+  margin: auto;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* نسبت 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* انیمیشن زوم */
+@keyframes zoomIn {
+  from {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.8;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoomOut {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* ریسپانسیو برای موبایل */
+@media (max-width: 700px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    width: 95%;
+    animation: zoomIn 0.4s ease-in-out;
+    transition: transform 0.1s ease-out; /* Maintain smooth movement on mobile */
+  }
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: auto; /* اجازه تعامل با ویدیو */
+}
+
+/* برای اطمینان، می‌تونیم روی مودال هم تنظیم کنیم */
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0b0d21;
+  border-radius: 14px;
+  padding: 20px;
+  max-width: 90%;
+  width: 800px;
+  box-shadow: 0 0 30px #0039a388, 0 0 10px #00135f55;
+  animation: zoomIn 0.4s ease-in-out;
+  transition: transform 0.1s ease-out;
+  pointer-events: auto; /* اطمینان از تعامل */
+}
+
+
+/* برای پس‌زمینه مودال */
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* پس‌زمینه نباید تعامل رو مسدود کنه */
+}
+
+.video-modal.active {
+  display: flex;
+  animation: fadeIn 0.3s ease-in-out;
+  pointer-events: auto; /* وقتی مودال فعاله، تعامل فعال بشه */
 }
