@@ -115,7 +115,6 @@ p{
   padding: 30px;
   background: #020219;
   border-radius: 16px;
-  width: 60%;
   justify-content: center;
 }
 
@@ -129,7 +128,9 @@ p{
   border-radius: 8px;
   text-decoration: none;
   color: white;
-  
+  display :flex;
+justify-content:center ;
+flex-wrap:wrap;
   border: 2px solid transparent;
   transition: 0.3s ease-in-out;
   box-shadow: 0 0 10px transparent;
