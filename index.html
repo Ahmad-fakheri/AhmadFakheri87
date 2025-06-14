@@ -1,98 +1,204 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>نمونه کارهای ویدیویی</title>
+  <title>Ahmad | Video Editor</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="background-layer"></div>
   <div class="header">
-    <h1>Ahmad | Video Editor</h1>
-    <img id="prof" src="prof.png" alt="profile">
+    <img id="prof" src="profile.jpg" alt="Profile">
+    <div>
+      <h1>Ahmadreza Fakheri</h1>
+      <p id="in">Video Editor for Top 1% Creators!</p>
+    </div>
+    
   </div>
-  <p id="in">Video Editor for Top 1% Creators!</p>
-  <hr style="border: none; height: 2px; background: #4f46e5; margin: 20px 0;">
-  <main>
-    <div class="works-grid">
-      <div class="card">
-        <iframe src="https://www.youtube.com/embed/iekTj7xuBN4" allowfullscreen></iframe>
-        <div class="card-content">
-          <h3>Artpack</h3>
-          <p>introduce video for graphic design pack for website</p>
-        </div>
-      </div>
-      <div class="card">
-        <iframe src="https://www.youtube.com/embed/vXFql8cAh4E" allowfullscreen></iframe>
-        <div class="card-content">
-          <h3>Business channel</h3>
-          <p>video for a business channel, focusing on brand storytelling and corporate messaging</p>
-        </div>
-      </div>
-      <div class="card">
-        <iframe src="https://www.youtube.com/embed/FWEZa5pHBTI" allowfullscreen></iframe>
-        <div class="card-content">
-          <h3>Dropship</h3>
-          <p>video editing for e-commerce and product promotion engaging visuals </p>
-        </div>
-      </div>
-      <div class="card">
-        <iframe src="https://www.youtube.com/embed/jOXDoEm_gNo" allowfullscreen></iframe>
-        <div class="card-content">
-          <h3>Trading</h3>
-          <p>A dynamic video showcasing strategic trading insights and market analysis</p>
-        </div>
-      </div>
-      <div class="card">
-        <iframe src="https://www.youtube.com/embed/XIlu8JkgyS0" allowfullscreen></iframe>
-        <div class="card-content">
-          <h3>Documentary</h3>
-          <p>compelling documentary piece edited to convey a powerful narrative</p>
-        </div>
-      </div>
-      <div class="card">
-        <iframe src="https://www.youtube.com/embed/amveLj5pWho" allowfullscreen></iframe>
-        <div class="card-content">
-          <h3>Documentary</h3>
-          <p>compelling documentary piece edited to convey a powerful narrative</p>
-        </div>
-      </div>
-      <div class="card">
-        <iframe src="https://www.youtube.com/embed/d1nKAjJVdfE" allowfullscreen></iframe>
-        <div class="card-content">
-          <h3>Map animation</h3>
-          <p>map animation video visualizing geographical data or travel</p>
-        </div>
-      </div>
-      <div class="card">
-        <iframe src="https://www.youtube.com/embed/XpmIQ7Wgjf4" allowfullscreen></iframe>
-        <div class="card-content">
-          <h3>Youtube tutorial</h3>
-          <p>A comprehensive and easy-to-follow YouTube tutorial</p>
-        </div>
+  
+
+  <!-- دکمه‌های جابه‌جایی -->
+  <div class="toggle-buttons">
+    <button id="longFormBtn" class="toggle-btn active">long form</button>
+    <button id="shortFormBtn" class="toggle-btn">short form</button>
+  </div>
+
+  <!-- بخش لانگ فورم -->
+  <div id="longForm" class="works-grid">
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/sample1" allowfullscreen></iframe>
+      <div class="card-content">
+        <h3>Artpack</h3>
+        <p>introduce video for graphic design pack for website</p>
       </div>
     </div>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-    <div class="social-buttons">
-      <a href="http://t.me/ahmad_fakheri87" target="_blank" class="telegram"><i class="fab fa-telegram"></i> Telegram</a>
-      <a href="http://instagram.com/ahmad_fakheri87" target="_blank" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="https://www.youtube.com/@Ahmad_Fakheri" target="_blank" class="youtube"><i class="fab fa-youtube"></i> YouTube</a>
-      <a href="https://x.com/AFakheri7505?t=Ue142MNhFB-9qeH7U-v2qw&s=09" target="_blank" class="x"><i class="fab fa-x-twitter"></i> X</a>
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/sample2" allowfullscreen></iframe>
+      <div class="card-content">
+        <h3>Business channel</h3>
+        <p>video for a business channel, focusing on brand storytelling and corporate messaging</p>
+      </div>
     </div>
-    <p>Ahmadreza Fakheri</p>
-  </main>
-<div class="video-modal">
-  <div class="modal-content">
-
-    <span class="close-btn">✕</span>
-
-    <div class="video-wrapper">
-      <iframe src=""></iframe>
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/sample3" allowfullscreen></iframe>
+      <div class="card-content">
+        <h3>Dropship</h3>
+        <p>video editing for e-commerce and product promotion engaging visuals</p>
+      </div>
+    </div>
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/sample4" allowfullscreen></iframe>
+      <div class="card-content">
+        <h3>Trading</h3>
+        <p>A dynamic video showcasing strategic trading insights and market analysis</p>
+      </div>
+    </div>
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/sample5" allowfullscreen></iframe>
+      <div class="card-content">
+        <h3>Documentary</h3>
+        <p>compelling documentary piece edited to convey a powerful narrative</p>
+      </div>
+    </div>
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/sample6" allowfullscreen></iframe>
+      <div class="card-content">
+        <h3>Map animation</h3>
+        <p>map animation video visualizing geographical data or travel</p>
+      </div>
+    </div>
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/sample7" allowfullscreen></iframe>
+      <div class="card-content">
+        <h3>Youtube tutorial</h3>
+        <p>A comprehensive and easy-to-follow YouTube tutorial</p>
+      </div>
     </div>
   </div>
-</div>
 
-  <script src="script.js"></script>
+  <!-- بخش شورت فورم -->
+  <div id="shortForm" class="works-grid" style="display: none;">
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/sample_short1" allowfullscreen></iframe>
+      <div class="card-content">
+        <h3>Short Promo</h3>
+        <p>Quick and engaging product promotion video</p>
+      </div>
+    </div>
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/sample_short2" allowfullscreen></iframe>
+      <div class="card-content">
+        <h3>Travel Reel</h3>
+        <p>Short travel video with stunning visuals</p>
+      </div>
+    </div>
+    <div class="card">
+      <iframe src="https://www.youtube.com/embed/sample_short3" allowfullscreen></iframe>
+      <div class="card-content">
+        <h3>Tutorial Clip</h3>
+        <p>Short and snappy tutorial for quick learning</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- شبکه‌های اجتماعی (فوتر) -->
+  <div class="social-buttons" id="footer">
+    <h2>Let’s make something insane</h2>
+    <a href="#" class="telegram"><i class="fab fa-telegram-plane"></i>Telegram</a>
+    <a href="#" class="instagram"><i class="fab fa-instagram"></i>Instagram</a>
+    <a href="#" class="youtube"><i class="fab fa-youtube"></i>YouTube</a>
+    <a href="#" class="x"><i class="fab fa-x"></i>X</a>
+  </div>
+
+  <!-- مودال ویدیو -->
+  <div class="video-modal" id="videoModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeBtn">×</span>
+      <div class="video-wrapper">
+        <iframe id="modalVideo" src="" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // مدیریت جابه‌جایی بین لانگ فورم و شورت فورم
+    const longFormBtn = document.getElementById('longFormBtn');
+    const shortFormBtn = document.getElementById('shortFormBtn');
+    const longFormSection = document.getElementById('longForm');
+    const shortFormSection = document.getElementById('shortForm');
+
+    function switchToLongForm() {
+      // انیمیشن خروج برای شورت فورم
+      if (shortFormSection.style.display !== 'none') {
+        shortFormSection.classList.add('exitLeft');
+        setTimeout(() => {
+          shortFormSection.style.display = 'none';
+          shortFormSection.classList.remove('exitLeft');
+          
+          // انیمیشن ورود برای لانگ فورم
+          longFormSection.style.display = 'grid';
+          longFormSection.classList.add('enterRight');
+          setTimeout(() => {
+            longFormSection.classList.remove('enterRight');
+          }, 300); // مطابق با مدت زمان انیمیشن
+        }, 300); // منتظر تکمیل انیمیشن خروج
+      } else {
+        longFormSection.style.display = 'grid';
+      }
+      longFormBtn.classList.add('active');
+      shortFormBtn.classList.remove('active');
+    }
+
+    function switchToShortForm() {
+      // انیمیشن خروج برای لانگ فورم
+      if (longFormSection.style.display !== 'none') {
+        longFormSection.classList.add('exitRight');
+        setTimeout(() => {
+          longFormSection.style.display = 'none';
+          longFormSection.classList.remove('exitRight');
+          
+          // انیمیشن ورود برای شورت فورم
+          shortFormSection.style.display = 'grid';
+          shortFormSection.classList.add('enterLeft');
+          setTimeout(() => {
+            shortFormSection.classList.remove('enterLeft');
+          }, 300); // مطابق با مدت زمان انیمیشن
+        }, 300); // منتظر تکمیل انیمیشن خروج
+      } else {
+        shortFormSection.style.display = 'grid';
+      }
+      shortFormBtn.classList.add('active');
+      longFormBtn.classList.remove('active');
+    }
+
+    longFormBtn.addEventListener('click', switchToLongForm);
+    shortFormBtn.addEventListener('click', switchToShortForm);
+
+    // مدیریت مودال ویدیو
+    const videoModal = document.getElementById('videoModal');
+    const modalVideo = document.getElementById('modalVideo');
+    const closeBtn = document.getElementById('closeBtn');
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const iframeSrc = card.querySelector('iframe').src;
+        modalVideo.src = iframeSrc;
+        videoModal.classList.add('active');
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      videoModal.classList.remove('active');
+      modalVideo.src = ''; // توقف ویدیو با پاک کردن src
+    });
+
+    videoModal.addEventListener('click', (e) => {
+      if (e.target === videoModal) {
+        videoModal.classList.remove('active');
+        modalVideo.src = '';
+      }
+    });
+  </script>
 </body>
 </html>
